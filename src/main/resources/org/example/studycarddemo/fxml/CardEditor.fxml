@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.studycarddemo.UI.CardEditorController">
+
+    <top>
+        <VBox spacing="5" styleClass="header">
+            <padding><Insets top="15" right="15" bottom="10" left="15"/></padding>
+            <HBox spacing="15">
+                <Button text="← Back" onAction="#onBack"/>
+                <Label fx:id="setNameLabel" text="Editing:" styleClass="title"/>
+            </HBox>
+        </VBox>
+    </top>
+
+    <center>
+        <HBox spacing="15">
+            <padding><Insets top="0" right="15" bottom="15" left="15"/></padding>
+
+            <VBox spacing="10" prefWidth="300">
+                <Label text="Cards in this set:"/>
+                <ListView fx:id="cardListView" VBox.vgrow="ALWAYS"/>
+                <Button fx:id="newButton" text="+ New Card"
+                        onAction="#onNew" maxWidth="Infinity"/>
+            </VBox>
+
+            <VBox spacing="10" HBox.hgrow="ALWAYS">
+                <Label text="Question:" styleClass="section-label"/>
+                <TextArea fx:id="questionArea" prefRowCount="5" wrapText="true"
+                          promptText="Enter the question..."/>
+
+                <Label text="Answer:" styleClass="section-label"/>
+                <TextArea fx:id="answerArea" prefRowCount="5" wrapText="true"
+                          promptText="Enter the answer..."/>
+
+                <HBox spacing="10">
+                    <Button fx:id="saveButton" text="Save"
+                            onAction="#onSave" styleClass="primary-button"/>
+                    <Button fx:id="deleteButton" text="Delete"
+                            onAction="#onDelete" disable="true"
+                            styleClass="danger-button"/>
+                </HBox>
+            </VBox>
+        </HBox>
+    </center>
+</BorderPane>
