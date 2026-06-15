@@ -46,6 +46,8 @@ public class StudyService {
         return answerRevealed;
     }
     //go to the next card in one set of cards
+    // when user has shown the answer of card 1, then answerRevealed = true
+    // then go to the card 2, the answerRevealed is still true - nope, need to reset
     private void nextCard() {
         currentIdx++;
         answerRevealed = false;
