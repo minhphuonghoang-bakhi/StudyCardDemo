@@ -29,7 +29,8 @@ public class SetOverviewController {
     @FXML
     public void initialize() {
         loadSets();
-        setListView.getSelectionModel().selectedItemProperty().addListener((obs, oldSet, newSet) -> {
+        setListView.getSelectionModel().selectedItemProperty().
+                addListener((obs, oldSet, newSet) -> {
             boolean hasSelection = newSet != null;
             editCardsButton.setDisable(!hasSelection);
             studyButton.setDisable(!hasSelection);

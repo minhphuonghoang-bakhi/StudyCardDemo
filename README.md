@@ -160,4 +160,30 @@ Weiterschalten der Karten und korrekte Zählung. Ausführen mit:
 ```bash
 mvn test
 ```
+---
+### Nutzung von KI-Werkzeugen
+
+Im Rahmen dieses Projekts wurde KI-gestützte Werkzeug (Claude AI) unterstützend eingesetzt. Die KI wurde ausschließlich
+für Idee (wie die Architektur aussehen sollte) und Syntaxfragen genutzt — nicht zur automatischen
+Generierung des fertigen Programms. Konzeption, Implementierung und Tests wurden eigenständig erarbeitet und verstanden.
+
+Wofür KI genutzt wurde
+
+
+Ideen / Konzept:
+
+Diskussion möglicher Architekturansätze (Schichtentrennung:
+entity / dao / services / UI)
+
+Anregungen für mögliche Erweiterungen (z. B. Spaced Repetition)
+
+
+
+Syntax / Nachschlagen:
+
+Klärung der korrekten JavaFX-Syntax (z. B. FXMLLoader, @FXML,
+Property-Listener, ObservableList
+
+Erinnerung an JDBC-Konventionen (try-with-resources,
+PreparedStatement mit Platzhaltern, RETURN_GENERATED_KEYS)
 
