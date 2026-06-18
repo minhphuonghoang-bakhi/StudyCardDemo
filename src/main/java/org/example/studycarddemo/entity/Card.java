@@ -1,5 +1,11 @@
 package org.example.studycarddemo.entity;
 
+/**
+ * Repräsentiert eine einzelne Lernkarte mit Frage und Antwort.
+ * Eine Karte gehört immer zu genau einem StudySet (referenziert über
+ * setId) und speichert zusätzlich, wie oft sie als bekannt bzw.
+ * unbekannt markiert wurde.
+ */
 public class Card {
     private int id;
     private int setId;
@@ -10,6 +16,9 @@ public class Card {
 
     public Card() {
     }
+    /** Erstellt eine Karte mit bekannter ID. Wird verwendet, wenn eine Karte
+     * aus der Datenbank geladen wird (die ID stammt dann aus dem ResultSet).
+     */
     public Card(int id, int setId, String question, String answer) {
         this.id = id;
         this.setId = setId;

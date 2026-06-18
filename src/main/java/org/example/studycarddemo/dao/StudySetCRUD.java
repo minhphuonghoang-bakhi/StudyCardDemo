@@ -3,6 +3,11 @@ import org.example.studycarddemo.entity.StudySet;
 import java.util.*;
 import java.sql.*;
 
+/**
+ * Data-Access-Object (DAO) für StudySet-Objekte.
+ * Kapselt alle Datenbankzugriffe rund um Lernsets (Erstellen, Lesen,
+ * Aktualisieren, Löschen) über JDBC.
+ */
 public class StudySetCRUD {
     // CREATE study set
     public void create(StudySet set) throws SQLException {

@@ -1,6 +1,11 @@
 package org.example.studycarddemo.entity;
 import java.util.*;
 
+/**
+ * Repräsentiert ein Lernset, also eine benannte Sammlung von Card-Objekten.
+ * Ein Lernset besitzt einen Namen, eine optionale Beschreibung und eine Liste
+ * zugehöriger Karten.
+ */
 public class StudySet {
     private int id;
     private String name;

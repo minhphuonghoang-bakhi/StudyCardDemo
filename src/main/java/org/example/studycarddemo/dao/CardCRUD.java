@@ -5,6 +5,11 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Data-Access-Object (DAO) für Card-Objekte.
+ * Kapselt alle Datenbankzugriffe rund um Karten (Erstellen, Lesen, Aktualisieren,
+ * Löschen sowie das Hochzählen der Lernstatistik) über JDBC.
+ */
 public class CardCRUD {
     //helper method for clean code
     private Card Track_rs(ResultSet rs) throws SQLException {
