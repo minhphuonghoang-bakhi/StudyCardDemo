@@ -67,7 +67,7 @@ public class StudySetCRUD {
     }
     // find by ID
     public StudySet findById(int id) throws SQLException {
-        String sql = "SELECT id, name, description FROM study_set WHERE id = ?";
+        String sql = "SELECT id, name, description FROM studyset WHERE id = ?";
         try (Connection c = DatabaseConnection.get();
              PreparedStatement ps = c.prepareStatement(sql)) {
             ps.setInt(1, id);
